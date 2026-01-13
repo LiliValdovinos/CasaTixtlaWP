@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros - Pozolería Casa Tixtla</title>
+    <meta name="description" content="Conoce la historia de Casa Tixtla - Tradición familiar desde 1976">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    
+    <style>
+    /* Stats Section */
+    .stats-section {
+        background: white;
+    }
+
+    .stat-number {
+        font-size: 3.5rem;
+        font-weight: 900;
+        font-family: 'Cinzel Decorative', serif;
+    }
+
+    .stat-turquoise {
+        color: var(--turquoise-color);
+    }
+
+    .stat-green {
+        color: var(--green-color);
+    }
+
+    .stat-purple {
+        color: var(--purple-color);
+    }
+
+    .stat-pink {
+        color: var(--mexican_pink-color);
+    }
+
+    .stat-title {
+        color: var(--dark-color);
+        font-weight: 700;
+        margin-top: 1rem;
+    }
+
+    /* Values Section */
+    .value-card {
+        padding: 2rem;
+        transition: all 0.3s ease;
+        height: 100%;
+    }
+
+    .value-card:hover {
+        transform: translateY(-10px);
+    }
+
+    .value-icon-wrapper {
+        width: 80px;
+        height: 80px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        transition: all 0.3s ease;
+    }
+
+    .value-card-tradition .value-icon-wrapper {
+        background: rgba(160, 3, 89, 0.15);
+    }
+
+    .value-card-tradition .value-icon-wrapper i {
+        color: var(--mexican_pink-color);
+    }
+
+    .value-card-tradition:hover .value-icon-wrapper {
+        background: var(--mexican_pink-color);
+        transform: scale(1.1);
+    }
+
+    .value-card-tradition:hover .value-icon-wrapper i {
+        color: white;
+    }
+
+    .value-card-tradition h4 {
+        color: var(--mexican_pink-color);
+    }
+
+    .value-card-quality .value-icon-wrapper {
+        background: rgba(68, 201, 52, 0.15);
+    }
+
+    .value-card-quality .value-icon-wrapper i {
+        color: var(--green-color);
+    }
+
+    .value-card-quality:hover .value-icon-wrapper {
+        background: var(--green-color);
+        transform: scale(1.1);
+    }
+
+    .value-card-quality:hover .value-icon-wrapper i {
+        color: white;
+    }
+
+    .value-card-quality h4 {
+        color: var(--green-color);
+    }
+
+    .value-card-family .value-icon-wrapper {
+        background: rgba(1, 160, 165, 0.15);
+    }
+
+    .value-card-family .value-icon-wrapper i {
+        color: var(--turquoise-color);
+    }
+
+    .value-card-family:hover .value-icon-wrapper {
+        background: var(--turquoise-color);
+        transform: scale(1.1);
+    }
+
+    .value-card-family:hover .value-icon-wrapper i {
+        color: white;
+    }
+
+    .value-card-family h4 {
+        color: var(--turquoise-color);
+    }
+
+    @media (max-width: 768px) {
+        .stat-number {
+            font-size: 2.5rem;
+        }
+        
+        .value-icon-wrapper {
+            width: 60px;
+            height: 60px;
+        }
+        
+        .value-icon-wrapper i {
+            font-size: 2rem !important;
+        }
+    }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <img src="/images/gallery/logo_photo.png" alt="Casa Tixtla Logo" class="navbar-logo me-2">
+                POZOLERÍA CASA TIXTLA
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">INICIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="menu.html">MENÚ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="nosotros.html">NOSOTROS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">CONTACTO</a>
+                    </li>
+                </ul>
+                
+                <div class="social-icons d-none d-lg-flex">
+                    <a href="https://www.facebook.com/restaurantecasatixtla" class="text-dark me-2" title="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/restaurantecasatixtla/#" class="text-dark me-2" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@restaurantecasatixtla" class="text-dark" title="TikTok"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Main Content -->
+    <main>
+        <section class="py-5" style="margin-top: 80px;">
+            <div class="container">
+                <div class="row align-items-center mb-5">
+                    <div class="col-lg-6">
+                        <h1 class="display-4 fw-bold mb-4">Nuestra Historia</h1>
+                        <p class="lead mb-4">
+                            Desde 1976, nuestra familia ha mantenido viva la tradición 
+                            del pozole auténtico Guerrerense en el corazón de Tixtla.
+                        </p>
+                        <p class="mb-4">
+                            Todo comenzó cuando se llegó desde Tixtla Guerrero con sus recetas secretas 
+                            y el sueño de compartir el auténtico sabor del pozole tradicional. Con más de 
+                            48 años de experiencia, cada plato que servimos lleva 
+                            el amor y la dedicación de tres generaciones.
+                        </p>
+                        <p class="mb-4">
+                            Utilizamos únicamente ingredientes frescos y naturales: nuestro maíz cacahuazintle 
+                            es seleccionado cuidadosamente, nuestras carnes son de la más alta calidad, y 
+                            nuestras especias son molidas diariamente para garantizar el sabor más auténtico.
+                        </p>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="/images/gallery/historia_photo.jpg" alt="Historia" class="img-fluid">
+                    </div>
+                </div>
+
+                <!-- Stats Section -->
+                <div class="row text-center mb-5 py-5 stats-section rounded">
+                    <div class="col-md-3 mb-4">
+                        <div class="stat-number stat-turquoise">48+</div>
+                        <h5 class="stat-title">Años de Tradición</h5>
+                        <p class="text-muted">Manteniendo vivas las recetas familiares</p>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <div class="stat-number stat-green">10k+</div>
+                        <h5 class="stat-title">Clientes Satisfechos</h5>
+                        <p class="text-muted">Familias que confían en nuestro sabor</p>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <div class="stat-number stat-purple">100%</div>
+                        <h5 class="stat-title">Ingredientes Naturales</h5>
+                        <p class="text-muted">Sin conservadores ni químicos artificiales</p>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <div class="stat-number stat-pink">3</div>
+                        <h5 class="stat-title">Generaciones</h5>
+                        <p class="text-muted">De conocimiento culinario tradicional</p>
+                    </div>
+                </div>
+
+                <!-- Values Section -->
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="text-center mb-5">Nuestros Valores</h2>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="text-center value-card value-card-tradition">
+                            <div class="value-icon-wrapper mb-3">
+                                <i class="fas fa-heart fa-3x"></i>
+                            </div>
+                            <h4>Tradición</h4>
+                            <p>Preservamos las recetas auténticas transmitidas de generación en generación.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="text-center value-card value-card-quality">
+                            <div class="value-icon-wrapper mb-3">
+                                <i class="fas fa-leaf fa-3x"></i>
+                            </div>
+                            <h4>Calidad</h4>
+                            <p>Seleccionamos los mejores ingredientes frescos y naturales para cada platillo.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="text-center value-card value-card-family">
+                            <div class="value-icon-wrapper mb-3">
+                                <i class="fas fa-users fa-3x"></i>
+                            </div>
+                            <h4>Familia</h4>
+                            <p>Tratamos a cada cliente como parte de nuestra familia mexicana.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="bg-secondary py-3 mt-auto">
+        <div class="container">
+            <div class="row mb-3">
+                <div class="col-12">
+                    <div class="row text-center">
+                        <div class="col-md-3 mb-2">
+                            <h6 class="text-warning mb-2 small">UBICACIÓN</h6>
+                            <p class="text-light small mb-0" style="font-size: 0.85rem;">C. Juan E. Hernández y Davalos 36, Algarín, Cuauhtémoc, 06880 Ciudad de México, CDMX</p>
+                        </div>
+                        <div class="col-md-3 mb-2">
+                            <h6 class="text-warning mb-2 small">TELÉFONO</h6>
+                            <p class="text-light small mb-0" style="font-size: 0.85rem;">55 5440 8042</p>
+                        </div>
+                        <div class="col-md-3 mb-2">
+                            <h6 class="text-warning mb-2 small">HORARIOS</h6>
+                            <p class="text-light small mb-0" style="font-size: 0.85rem;">Lun - Dom: 10:30 AM - 20:00 PM</p>
+                        </div>
+                        <div class="col-md-3 mb-2">
+                            <h6 class="text-warning mb-2 small">REDES SOCIALES</h6>
+                            <div class="social-icons d-flex justify-content-center gap-2">
+                                <a href="https://www.facebook.com/restaurantecasatixtla" class="text-light" title="Facebook">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                                <a href="https://www.instagram.com/restaurantecasatixtla/#" class="text-light" title="Instagram">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="https://wa.me/525547573789" class="text-light" title="WhatsApp">
+                                    <i class="fab fa-whatsapp"></i>
+                                </a>
+                                <a href="#" class="text-light" title="Google Reviews">
+                                    <i class="fab fa-google"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row border-top border-secondary pt-2">
+                <div class="col-12 text-center">
+                    <p class="mb-0 text-light" style="font-size: 0.85rem;">&copy; <span id="currentYear"></span> Pozolería Casa Tixtla. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="/js/main.js"></script>
+</body>
+</html>
